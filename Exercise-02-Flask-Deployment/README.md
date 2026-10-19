@@ -1,24 +1,24 @@
-\# Exercise 2: Minikube and Flask
+# Exercise 2: Minikube and Flask
 
 
 
-\## Objective
+## Objective
 
 Build a Flask web application inside a Docker image and deploy it to Kubernetes using Minikube.
 
 
 
-\## Files
+## Files
 
-\- `app.py` — Flask application serving a response on port 15000.
+- `app.py` — Flask application serving a response on port 15000.
 
-\- `Dockerfile` — Builds the application image.
+- `Dockerfile` — Builds the application image.
 
-\- `flask-deployment.yaml` — Defines the Kubernetes Deployment and NodePort Service.
+- `flask-deployment.yaml` — Defines the Kubernetes Deployment and NodePort Service.
 
 
 
-\## Implementation
+## Implementation
 
 1\. Built the Docker image using `minikube image build -t flask-app:latest .`.
 
@@ -28,7 +28,7 @@ Build a Flask web application inside a Docker image and deploy it to Kubernetes 
 
 
 
-\## Verification
+## Verification
 
 The Deployment rollout completed successfully. The application endpoint can be tested using `minikube service flask-app-service --url`.
 
@@ -38,7 +38,7 @@ Expected response: `Hello from Flask on Kubernetes!`
 
 
 
-\## Cleanup
+## Cleanup
 
 Run `kubectl delete -f flask-deployment.yaml` to remove the Deployment and Service.
 
