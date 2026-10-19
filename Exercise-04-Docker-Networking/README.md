@@ -1,14 +1,14 @@
-\# Exercise 4: Docker Networking
+# Exercise 4: Docker Networking
 
 
 
-\## Objective
+## Objective
 
 Create a custom Docker bridge network and verify communication between containers using container names.
 
 
 
-\## Implementation
+## Implementation
 
 1\. Create a user-defined bridge network named `devops-net`.
 
@@ -18,7 +18,7 @@ Create a custom Docker bridge network and verify communication between container
 
 
 
-\## Commands
+## Commands
 
 ```powershell
 
@@ -36,7 +36,7 @@ docker exec web1 nginx -v
 
 
 
-\## Cleanup
+## Cleanup
 
 ```powershell
 
