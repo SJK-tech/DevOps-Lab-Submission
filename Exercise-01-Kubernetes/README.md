@@ -1,30 +1,30 @@
-\# Exercise 1: Kubernetes Getting Started
+# Exercise 1: Kubernetes Getting Started
 
 
 
-\## Objective
+## Objective
 
 Deploy an Nginx Pod on a local Kubernetes cluster using Minikube and expose it through a NodePort Service.
 
 
 
-\## Prerequisites
+## Prerequisites
 
-\- Docker Desktop with its Linux engine running
+- Docker Desktop with its Linux engine running
 
-\- Minikube
+- Minikube
 
-\- kubectl
+- kubectl
 
 
 
-\## Implementation
+## Implementation
 
 The Nginx Pod was created using `kubectl run` and exposed using `kubectl expose`.
 
 
 
-\## Commands executed
+## Commands executed
 
 ```powershell
 
@@ -48,33 +48,33 @@ minikube service hello-k8s
 
 
 
-\## Verification results
+## Verification results
 
-\- Kubernetes node status: Ready
+- Kubernetes node status: Ready
 
-\- Pod: hello-k8s
+- Pod: hello-k8s
 
-\- Pod status: Running
+- Pod status: Running
 
-\- Ready containers: 1/1
+- Ready containers: 1/1
 
-\- Restarts: 0
+- Restarts: 0
 
-\- Service type: NodePort
+- Service type: NodePort
 
-\- Service port: 80
+- Service port: 80
 
-\- Assigned NodePort: 30163
+- Assigned NodePort: 30163
 
 
 
-\## Access
+## Access
 
 Minikube opened the service through a local tunnel. The terminal must remain open while the tunnel is running.
 
 
 
-\## Cleanup
+## Cleanup
 
 ```powershell
 
